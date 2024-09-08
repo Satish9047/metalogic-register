@@ -9,8 +9,8 @@ import Register4 from "@/components/Register/Register4";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
-  const [step, setStep] = useState(1);
+const Page = () => {
+  const [step, setStep] = useState<number>(1);
 
   const nextStep = () => {
     if (step > 0) {
@@ -49,4 +49,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

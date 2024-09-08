@@ -50,7 +50,7 @@ button {
   width: 14rem;
   height: 4.7rem;
 }
-/* 
+
 .backgroundImg {
   position: absolute;
   buttom: 0;
@@ -59,7 +59,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} */
+}
+
 .form-container {
   background-color: rgba(255, 255, 255, 0.95);
 }
