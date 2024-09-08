@@ -1,7 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 import CustomImage from "../comp/Image";
 
 const Register4 = ({ back }: { back: () => void }) => {
+  const router = useRouter();
+  const handleSubmit = () => {
+    router.push("/profile");
+  };
   return (
     <div>
       <h2>Review Your Details</h2>
@@ -96,7 +101,9 @@ const Register4 = ({ back }: { back: () => void }) => {
             <button className="bg-[#688968]" onClick={back}>
               Back
             </button>
-            <button type="submit">Submit</button>
+            <button type="button" onClick={handleSubmit}>
+              Submit
+            </button>
           </div>
         </div>
       </div>

@@ -1,18 +1,19 @@
 import React from "react";
-
-const Radio = () => {
+import useFormStore from "@/zustand";
+const Radio = ({ label, id }: { label: string; id: string }) => {
+  const { formData, updateFormData } = useFormStore();
   return (
     <div className="flex items-center gap-2">
       <input
         type="radio"
-        id="male"
+        id={id}
         name="gender"
-        value="male"
+        value={formData.gender}
         className="text-green-500 focus:ring-green-500 h-8 w-8"
+        onChange={(e) => updateFormData("gender", e.target.value)}
       />
-      <label htmlFor="male">Male</label>
+      <label htmlFor={id}>{label}</label>
     </div>
   );
 };
-
 export default Radio;

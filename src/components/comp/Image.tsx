@@ -24,4 +24,5 @@ const CustomImage = ({
     </figure>
   );
 };
+
 export default CustomImage;

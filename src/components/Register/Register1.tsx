@@ -38,9 +38,9 @@ const Register1 = ({ next }: { next: () => void }) => {
           <div className="col-span-3 space-y-4">
             <label>Gender</label>
             <div className="flex gap-4 mt-2">
-              <Radio />
-              <Radio />
-              <Radio />
+              <Radio label="Male" id="male" />
+              <Radio label="Female" id="female" />
+              <Radio label="others" id="others" />
             </div>
           </div>
           <div className="col-span-3 flex justify-end">
