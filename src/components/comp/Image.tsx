@@ -1,18 +1,27 @@
 import Image from "next/image";
 import React from "react";
 
-const CImage = () => {
+const CustomImage = ({
+  src,
+  alt,
+  width,
+  height,
+}: {
+  src: string;
+  alt: string;
+  width: string;
+  height: string;
+}) => {
   return (
     <figure>
       <Image
-        src="/logo.svg"
-        alt="logo"
-        width={104.28}
-        height={78.1}
+        src={src}
+        alt={alt}
+        width={parseFloat(width)}
+        height={parseFloat(height)}
         className="rounded-[61px]"
       />
     </figure>
   );
 };
-
-export default CImage;
+export default CustomImage;

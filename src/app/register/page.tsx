@@ -1,5 +1,6 @@
 import Register1 from "@/components/Register/Register1";
 import Register2 from "@/components/Register/Register2";
+import Register3 from "@/components/Register/Register3";
 import Image from "next/image";
 import React from "react";
 
@@ -15,7 +16,7 @@ const page = () => {
           <input type="range" />
         </div>
         <div className="w-full px-[3.5rem] py-[1.3rem] bg-white rounded-lg form-container border border-[#999999]">
-          <Register2 />
+          <Register3 />
         </div>
       </section>
     </main>
