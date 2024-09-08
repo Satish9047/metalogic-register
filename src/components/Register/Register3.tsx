@@ -9,7 +9,7 @@ const Register3 = () => {
         <div className="flex flex-col justify-center gap-[23px]">
           <figure className="flex justify-center items-center">
             <CustomImage
-              src="/profile.svg"
+              src="/profile.png"
               width="232"
               height="233"
               alt="profile picture"
