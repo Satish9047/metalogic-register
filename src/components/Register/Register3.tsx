@@ -24,9 +24,9 @@ const Register3 = () => {
             />
             <label
               htmlFor="fileUpload"
-              className="px-4 py-2 bg-[#4daf4e] text-white font-semibold rounded-lg cursor-pointer hover:bg-green-600"
+              className="px-4 py-2 bg-[#4daf4e] text-white font-semibold rounded-xl cursor-pointer hover:bg-green-600"
             >
-              Upload File
+              Upload Image
             </label>
           </div>
         </div>
