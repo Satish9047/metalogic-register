@@ -2,3 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-size: 10px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.616rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4.8rem;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.34rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.16rem;
+}
+
+button {
+  padding: 0.4rem 1.2rem;
+  /* text-size: 1.8rem; */
+  /* font-weight: 700; */
+  /* line-height: 2.7rem; */
+  border-radius: 1rem;
+  background-color: #4daf4e;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffff;
+  width: 14rem;
+  height: 4.7rem;
+}
+/* 
+.backgroundImg {
+  position: absolute;
+  buttom: 0;
+  width: 100%;
+  background-image: url(/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.detail-div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+input {
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px #d6d6d6 solid;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.34rem;
+}
