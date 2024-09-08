@@ -3,7 +3,7 @@ import CustomInput from "../comp/Input";
 import DateInput from "../comp/DateInput";
 import Radio from "../comp/Radio";
 
-const Register1 = () => {
+const Register1 = ({ next }: { next: () => void }) => {
   return (
     <div className="space-y-[3.6rem] ">
       <h2>Personal Details</h2>
@@ -44,7 +44,7 @@ const Register1 = () => {
             </div>
           </div>
           <div className="col-span-3 flex justify-end">
-            <button type="submit" className="">
+            <button type="submit" className="" onClick={next}>
               Next
             </button>
           </div>

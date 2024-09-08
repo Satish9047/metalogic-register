@@ -2,7 +2,7 @@ import React from "react";
 import CustomInput from "../comp/Input";
 import Dropdown from "../comp/Dropdown";
 import { country, municipality, city, district } from "@/data";
-const Register2 = () => {
+const Register2 = ({ back, next }: { back: () => void; next: () => void }) => {
   return (
     <div className="space-y-[3.6rem] ">
       <h2>Address</h2>
@@ -36,8 +36,10 @@ const Register2 = () => {
           <CustomInput type="text" id="ward" label="Ward" placeholder="Eg: 4" />
 
           <div className="col-span-3 flex justify-end gap-[29px]">
-            <button className="bg-[#688968]">Back</button>
-            <button type="submit" className="">
+            <button className="bg-[#688968]" onClick={back}>
+              Back
+            </button>
+            <button type="submit" className="" onClick={next}>
               Next
             </button>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import CustomImage from "../comp/Image";
 
-const Register4 = () => {
+const Register4 = ({ back }: { back: () => void }) => {
   return (
     <div>
       <h2>Review Your Details</h2>
@@ -93,7 +93,9 @@ const Register4 = () => {
           </div>
 
           <div className="flex justify-end gap-[29px]">
-            <button className="bg-[#688968]">Back</button>
+            <button className="bg-[#688968]" onClick={back}>
+              Back
+            </button>
             <button type="submit">Submit</button>
           </div>
         </div>
