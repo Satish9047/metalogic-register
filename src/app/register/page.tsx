@@ -17,7 +17,7 @@ const page = () => {
         <div>
           <input type="range" />
         </div>
-        <div className="w-full px-[3.5rem] py-[1.3rem] bg-white rounded-lg form-container border border-[#999999]">
+        <div className="w-full px-[3.5rem] py-[1.3rem] bg-white rounded-xl form-container border border-[#999999]">
           <Register4 />
         </div>
       </section>
