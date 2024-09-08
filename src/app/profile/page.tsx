@@ -3,10 +3,10 @@ import useFormStore from "@/zustand";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
-    const { formData, updateFormData } = useFormStore();
-    return (
-        <main className="relative py-[1.4rem] px-[2.5rem] min-h-screen bg-[#F7FFEF]  backgroundImg">
+const Page = () => {
+  const { formData } = useFormStore();
+  return (
+    <main className="relative py-[1.4rem] px-[2.5rem] min-h-screen bg-[#F7FFEF]  backgroundImg">
       <figure className="">
         <Image src="/logo.svg" alt="logo" width={104.28} height={78.1} />
       </figure>
@@ -17,7 +17,7 @@ const page = () => {
             <div className="space-y-4">
               <figure>
                 <CustomImage
-                  src={formData.image ||"/profile.png"}
+                  src={formData.image || "/profile.png"}
                   width="232"
                   height="233"
                   alt="profile picture"
@@ -31,7 +31,7 @@ const page = () => {
                       <label className=" font-extrabold" htmlFor="">
                         First Name:
                       </label>
-                      <span>{formData.firstName|| "Raju"}</span>
+                      <span>{formData.firstName || "Raju"}</span>
                     </div>
                     <div className="detail-div">
                       <label className=" font-extrabold" htmlFor="">
@@ -44,7 +44,7 @@ const page = () => {
                         Last Name:
                       </label>
                       <span>{formData.lastName || "Pandey"}</span>
-                    </div> 
+                    </div>
                     <div className="detail-div">
                       <label className=" font-extrabold" htmlFor="">
                         Phone:
@@ -107,7 +107,6 @@ const page = () => {
       </section>
     </main>
   );
-    );
 };
 
-export default page;
+export default Page;
