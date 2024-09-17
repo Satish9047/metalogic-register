@@ -1,3 +1,4 @@
+"use client";
 import CustomImage from "@/components/comp/Image";
 import useFormStore from "@/zustand";
 import Image from "next/image";
