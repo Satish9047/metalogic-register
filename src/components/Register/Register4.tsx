@@ -1,8 +1,10 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import CustomImage from "../comp/Image";
+import useFormStore from "@/zustand/formStore";
 
 const Register4 = ({ back }: { back: () => void }) => {
+  const { formData } = useFormStore();
   const router = useRouter();
   const handleSubmit = () => {
     router.push("/profile");
@@ -27,37 +29,37 @@ const Register4 = ({ back }: { back: () => void }) => {
                 <label className=" font-extrabold" htmlFor="">
                   First Name:
                 </label>
-                <span>Anna</span>
+                <span>{formData.firstName}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Middle Name:{" "}
                 </label>
-                <span>Anna</span>
+                <span>{formData.middleName}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Last Name:
                 </label>
-                <span>Anna</span>
+                <span>{formData.lastName}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Phone:
                 </label>
-                <span>Anna</span>
+                <span>{formData.phone}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Birth Date:
                 </label>
-                <span>Anna</span>
+                <span>{formData.birthday}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Gender:
                 </label>
-                <span>Anna</span>
+                <span>{formData.gender}</span>
               </div>
             </div>
           </div>
@@ -68,31 +70,31 @@ const Register4 = ({ back }: { back: () => void }) => {
                 <label className=" font-extrabold" htmlFor="">
                   Country:
                 </label>
-                <span>Nepal</span>
+                <span>{formData.country}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   District:
                 </label>
-                <span>Bagmati</span>
+                <span>{formData.district}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Municipality/local:
                 </label>
-                <span>Kathmandu</span>
+                <span>{formData.municipality}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
-                  City:{" "}
+                  City:
                 </label>
-                <span>Kathmandu</span>
+                <span>{formData.city}</span>
               </div>
               <div className="detail-div">
                 <label className=" font-extrabold" htmlFor="">
                   Ward:
                 </label>
-                <span>1</span>
+                <span>{formData.ward}</span>
               </div>
             </div>
           </div>

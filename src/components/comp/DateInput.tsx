@@ -13,7 +13,7 @@ const DateInput = () => {
         className="w-full"
         placeholder="DD/MM/YYYY"
         value={formData.birthday}
-        onChange={(e) => addFormData("firstName", e.target.value)}
+        onChange={(e) => addFormData("birthday", e.target.value)}
       />
     </div>
   );
