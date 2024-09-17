@@ -1,5 +1,5 @@
 import React from "react";
-import useFormStore from "@/zustand";
+import useFormStore from "@/zustand/formStore";
 
 const Dropdown = ({
   label,
@@ -12,11 +12,11 @@ const Dropdown = ({
   placeholder: string;
   options?: string[];
 }) => {
-  const { formData, updateFormData } = useFormStore();
+  const { formData, addFormData } = useFormStore();
 
   // Handle the change event
   const handleData = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFormData(id as keyof typeof formData, e.target.value);
+    addFormData(id as keyof typeof formData, e.target.value);
   };
 
   // Get the current value from formData

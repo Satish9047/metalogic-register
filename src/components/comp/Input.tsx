@@ -1,5 +1,5 @@
 import React from "react";
-import useFormStore from "@/zustand";
+import useFormStore from "@/zustand/formStore";
 
 const CustomInput = ({
   type,
@@ -12,12 +12,12 @@ const CustomInput = ({
   id: string;
   placeholder: string;
 }) => {
-  const { formData, updateFormData } = useFormStore();
+  const { formData, addFormData } = useFormStore();
 
   // Handle input change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = type === "number" ? Number(e.target.value) : e.target.value;
-    updateFormData(id as keyof typeof formData, value);
+    addFormData(id as keyof typeof formData, value);
   };
 
   return (

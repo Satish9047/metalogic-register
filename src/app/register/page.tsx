@@ -8,7 +8,7 @@ import Register4 from "@/components/Register/Register4";
 
 import Image from "next/image";
 import React from "react";
-import useFormStore from "@/zustand";
+import useFormStore from "@/zustand/formStore";
 
 const Page = () => {
   const [step, setStep] = useState<number>(1);

@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 
 interface FormData {
   firstName: string;
@@ -17,7 +17,7 @@ interface FormData {
 
 interface FormState {
   formData: FormData;
-  updateFormData: (key: keyof FormData, value: string | number) => void;
+  addFormData: (key: keyof FormData, value: string | number) => void;
 }
 
 const useFormStore = create<FormState>((set) => ({
@@ -35,7 +35,8 @@ const useFormStore = create<FormState>((set) => ({
     ward: "",
     image: "",
   },
-  updateFormData: (key, value) =>
+
+  addFormData: (key, value) =>
     set((state) => ({
       formData: {
         ...state.formData,

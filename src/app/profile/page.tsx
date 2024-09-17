@@ -1,6 +1,6 @@
 "use client";
 import CustomImage from "@/components/comp/Image";
-import useFormStore from "@/zustand";
+import useFormStore from "@/zustand/formStore";
 import Image from "next/image";
 import React from "react";
 

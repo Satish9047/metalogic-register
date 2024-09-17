@@ -1,8 +1,8 @@
 import React from "react";
-import useFormStore from "@/zustand";
+import useFormStore from "@/zustand/formStore";
 
 const DateInput = () => {
-  const { formData, updateFormData } = useFormStore();
+  const { formData, addFormData } = useFormStore();
   return (
     <div className="input-div">
       <label htmlFor="birthday">Birth Date</label>
@@ -13,7 +13,7 @@ const DateInput = () => {
         className="w-full"
         placeholder="DD/MM/YYYY"
         value={formData.birthday}
-        onChange={(e) => updateFormData("firstName", e.target.value)}
+        onChange={(e) => addFormData("firstName", e.target.value)}
       />
     </div>
   );
