@@ -8,7 +8,7 @@ const Register1 = ({ next }: { next: () => void }) => {
     <div className="space-y-[3.6rem] ">
       <h2>Personal Details</h2>
       <form>
-        <div className="grid grid-cols-3 gap-[2.4rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[2.4rem]">
           <CustomInput
             type="text"
             label="First Name"
@@ -35,15 +35,15 @@ const Register1 = ({ next }: { next: () => void }) => {
           />
           <DateInput />
 
-          <div className="col-span-3 space-y-4">
+          <div className="col-span-1 md:col-span-3 space-y-4">
             <label>Gender</label>
-            <div className="flex gap-4 mt-2">
+            <div className="flex flex-col md:flex-row gap-4 mt-2">
               <Radio label="Male" id="male" />
               <Radio label="Female" id="female" />
               <Radio label="others" id="others" />
             </div>
           </div>
-          <div className="col-span-3 flex justify-end">
+          <div className="col-span-1 md:col-span-3 flex justify-end">
             <button type="submit" className="" onClick={next}>
               Next
             </button>

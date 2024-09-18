@@ -7,7 +7,7 @@ const Register2 = ({ back, next }: { back: () => void; next: () => void }) => {
     <div className="space-y-[3.6rem] ">
       <h2>Address</h2>
       <form>
-        <div className="grid grid-cols-3 gap-[2.4rem]">
+        <div className="grid grid-col-1 md:grid-cols-3 gap-[2.4rem]">
           <Dropdown
             label="Country"
             id="country"
@@ -35,7 +35,7 @@ const Register2 = ({ back, next }: { back: () => void; next: () => void }) => {
 
           <CustomInput type="text" id="ward" label="Ward" placeholder="Eg: 4" />
 
-          <div className="col-span-3 flex justify-end gap-[29px]">
+          <div className="col-span-1 md:col-span-3 flex justify-end gap-[29px]">
             <button className="bg-[#688968]" onClick={back}>
               Back
             </button>

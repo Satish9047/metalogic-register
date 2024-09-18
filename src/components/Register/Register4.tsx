@@ -66,7 +66,7 @@ const Register4 = ({ back }: { back: () => void }) => {
           <div className="flex flex-col gap-[1.6rem]">
             <h3>Address</h3>
             <div className="flex flex-wrap gap-10">
-              <div className="detail-div -my-2">
+              <div className="detail-div ">
                 <label className=" font-extrabold" htmlFor="">
                   Country:
                 </label>

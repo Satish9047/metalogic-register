@@ -11,11 +11,11 @@ const Page = () => {
       <figure className="">
         <Image src="/logo.svg" alt="logo" width={104.28} height={78.1} />
       </figure>
-      <section className="flex flex-col justify-center items-center translate-y-[10%]  w-7/12 mx-auto gap-y-[3.6rem] ">
+      <section className="flex flex-col justify-center items-center translate-y-[10%] w-full md:w-7/12 mx-auto gap-y-[2rem] md:gap-y-[3.6rem] ">
         <div className="w-full px-[3.5rem] py-[1.3rem] bg-white rounded-lg form-container border border-[#999999]">
           <div>
             <h2 className="flex justify-center">My Details</h2>
-            <div className="space-y-4">
+            <div className="space-y-1 md:space-y-4">
               <figure>
                 <CustomImage
                   src={formData.image || "/profile.png"}
@@ -24,7 +24,7 @@ const Page = () => {
                   alt="profile picture"
                 />
               </figure>
-              <div className="space-y-8">
+              <div className="space-y-3 md:space-y-8">
                 <div>
                   <h3>Personal Details</h3>
                   <div className="flex flex-wrap gap-[2.4rem]">
